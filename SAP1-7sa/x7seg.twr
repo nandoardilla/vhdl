@@ -1,0 +1,308 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml x7seg.twx x7seg.ncd -o x7seg.twr x7seg.pcf
+
+Design file:              x7seg.ncd
+Physical constraint file: x7seg.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+clr         |    2.354(R)|      SLOW  |   -0.633(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+a_to_g<0>   |        12.518(R)|      SLOW  |         5.227(R)|      FAST  |clk_BUFGP         |   0.000|
+a_to_g<1>   |        12.056(R)|      SLOW  |         5.041(R)|      FAST  |clk_BUFGP         |   0.000|
+a_to_g<2>   |        11.928(R)|      SLOW  |         4.930(R)|      FAST  |clk_BUFGP         |   0.000|
+a_to_g<3>   |        12.003(R)|      SLOW  |         4.958(R)|      FAST  |clk_BUFGP         |   0.000|
+a_to_g<4>   |        12.153(R)|      SLOW  |         5.006(R)|      FAST  |clk_BUFGP         |   0.000|
+a_to_g<5>   |        12.210(R)|      SLOW  |         4.705(R)|      FAST  |clk_BUFGP         |   0.000|
+a_to_g<6>   |        11.983(R)|      SLOW  |         4.983(R)|      FAST  |clk_BUFGP         |   0.000|
+an<0>       |        11.009(R)|      SLOW  |         4.896(R)|      FAST  |clk_BUFGP         |   0.000|
+an<1>       |         9.857(R)|      SLOW  |         4.262(R)|      FAST  |clk_BUFGP         |   0.000|
+an<2>       |         9.629(R)|      SLOW  |         4.136(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.087|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+x<0>           |a_to_g<0>      |   13.897|
+x<0>           |a_to_g<1>      |   13.690|
+x<0>           |a_to_g<2>      |   13.862|
+x<0>           |a_to_g<3>      |   13.937|
+x<0>           |a_to_g<4>      |   13.532|
+x<0>           |a_to_g<5>      |   13.603|
+x<0>           |a_to_g<6>      |   13.617|
+x<1>           |a_to_g<0>      |   13.237|
+x<1>           |a_to_g<1>      |   12.974|
+x<1>           |a_to_g<2>      |   12.784|
+x<1>           |a_to_g<3>      |   12.859|
+x<1>           |a_to_g<4>      |   12.872|
+x<1>           |a_to_g<5>      |   12.578|
+x<1>           |a_to_g<6>      |   12.901|
+x<2>           |a_to_g<0>      |   13.294|
+x<2>           |a_to_g<1>      |   12.832|
+x<2>           |a_to_g<2>      |   12.652|
+x<2>           |a_to_g<3>      |   12.727|
+x<2>           |a_to_g<4>      |   12.929|
+x<2>           |a_to_g<5>      |   12.986|
+x<2>           |a_to_g<6>      |   12.759|
+x<3>           |a_to_g<0>      |   14.164|
+x<3>           |a_to_g<1>      |   13.635|
+x<3>           |a_to_g<2>      |   13.511|
+x<3>           |a_to_g<3>      |   13.586|
+x<3>           |a_to_g<4>      |   13.799|
+x<3>           |a_to_g<5>      |   13.143|
+x<3>           |a_to_g<6>      |   13.562|
+x<4>           |a_to_g<0>      |   12.974|
+x<4>           |a_to_g<1>      |   12.767|
+x<4>           |a_to_g<2>      |   12.939|
+x<4>           |a_to_g<3>      |   13.014|
+x<4>           |a_to_g<4>      |   12.609|
+x<4>           |a_to_g<5>      |   12.680|
+x<4>           |a_to_g<6>      |   12.694|
+x<5>           |a_to_g<0>      |   12.985|
+x<5>           |a_to_g<1>      |   12.722|
+x<5>           |a_to_g<2>      |   12.532|
+x<5>           |a_to_g<3>      |   12.607|
+x<5>           |a_to_g<4>      |   12.620|
+x<5>           |a_to_g<5>      |   12.326|
+x<5>           |a_to_g<6>      |   12.649|
+x<6>           |a_to_g<0>      |   13.151|
+x<6>           |a_to_g<1>      |   12.689|
+x<6>           |a_to_g<2>      |   12.509|
+x<6>           |a_to_g<3>      |   12.584|
+x<6>           |a_to_g<4>      |   12.786|
+x<6>           |a_to_g<5>      |   12.843|
+x<6>           |a_to_g<6>      |   12.616|
+x<7>           |a_to_g<0>      |   13.596|
+x<7>           |a_to_g<1>      |   13.067|
+x<7>           |a_to_g<2>      |   12.943|
+x<7>           |a_to_g<3>      |   13.018|
+x<7>           |a_to_g<4>      |   13.231|
+x<7>           |a_to_g<5>      |   12.575|
+x<7>           |a_to_g<6>      |   12.994|
+x<8>           |a_to_g<0>      |   12.760|
+x<8>           |a_to_g<1>      |   12.553|
+x<8>           |a_to_g<2>      |   12.725|
+x<8>           |a_to_g<3>      |   12.800|
+x<8>           |a_to_g<4>      |   12.395|
+x<8>           |a_to_g<5>      |   12.466|
+x<8>           |a_to_g<6>      |   12.480|
+x<9>           |a_to_g<0>      |   12.873|
+x<9>           |a_to_g<1>      |   12.610|
+x<9>           |a_to_g<2>      |   12.420|
+x<9>           |a_to_g<3>      |   12.495|
+x<9>           |a_to_g<4>      |   12.508|
+x<9>           |a_to_g<5>      |   12.214|
+x<9>           |a_to_g<6>      |   12.537|
+x<10>          |a_to_g<0>      |   12.954|
+x<10>          |a_to_g<1>      |   12.492|
+x<10>          |a_to_g<2>      |   12.312|
+x<10>          |a_to_g<3>      |   12.387|
+x<10>          |a_to_g<4>      |   12.589|
+x<10>          |a_to_g<5>      |   12.646|
+x<10>          |a_to_g<6>      |   12.419|
+x<11>          |a_to_g<0>      |   13.048|
+x<11>          |a_to_g<1>      |   12.519|
+x<11>          |a_to_g<2>      |   12.395|
+x<11>          |a_to_g<3>      |   12.470|
+x<11>          |a_to_g<4>      |   12.683|
+x<11>          |a_to_g<5>      |   12.027|
+x<11>          |a_to_g<6>      |   12.446|
+x<12>          |a_to_g<0>      |   12.722|
+x<12>          |a_to_g<1>      |   12.515|
+x<12>          |a_to_g<2>      |   12.687|
+x<12>          |a_to_g<3>      |   12.762|
+x<12>          |a_to_g<4>      |   12.357|
+x<12>          |a_to_g<5>      |   12.428|
+x<12>          |a_to_g<6>      |   12.442|
+x<13>          |a_to_g<0>      |   12.810|
+x<13>          |a_to_g<1>      |   12.547|
+x<13>          |a_to_g<2>      |   12.357|
+x<13>          |a_to_g<3>      |   12.432|
+x<13>          |a_to_g<4>      |   12.445|
+x<13>          |a_to_g<5>      |   12.151|
+x<13>          |a_to_g<6>      |   12.474|
+x<14>          |a_to_g<0>      |   13.423|
+x<14>          |a_to_g<1>      |   12.961|
+x<14>          |a_to_g<2>      |   12.781|
+x<14>          |a_to_g<3>      |   12.856|
+x<14>          |a_to_g<4>      |   13.058|
+x<14>          |a_to_g<5>      |   13.115|
+x<14>          |a_to_g<6>      |   12.888|
+x<15>          |a_to_g<0>      |   13.078|
+x<15>          |a_to_g<1>      |   12.549|
+x<15>          |a_to_g<2>      |   12.425|
+x<15>          |a_to_g<3>      |   12.500|
+x<15>          |a_to_g<4>      |   12.713|
+x<15>          |a_to_g<5>      |   12.057|
+x<15>          |a_to_g<6>      |   12.476|
+x<16>          |a_to_g<0>      |   13.043|
+x<16>          |a_to_g<1>      |   12.836|
+x<16>          |a_to_g<2>      |   13.008|
+x<16>          |a_to_g<3>      |   13.083|
+x<16>          |a_to_g<4>      |   12.678|
+x<16>          |a_to_g<5>      |   12.749|
+x<16>          |a_to_g<6>      |   12.763|
+x<17>          |a_to_g<0>      |   12.777|
+x<17>          |a_to_g<1>      |   12.514|
+x<17>          |a_to_g<2>      |   12.324|
+x<17>          |a_to_g<3>      |   12.399|
+x<17>          |a_to_g<4>      |   12.412|
+x<17>          |a_to_g<5>      |   12.118|
+x<17>          |a_to_g<6>      |   12.441|
+x<18>          |a_to_g<0>      |   13.474|
+x<18>          |a_to_g<1>      |   13.012|
+x<18>          |a_to_g<2>      |   12.832|
+x<18>          |a_to_g<3>      |   12.907|
+x<18>          |a_to_g<4>      |   13.109|
+x<18>          |a_to_g<5>      |   13.166|
+x<18>          |a_to_g<6>      |   12.939|
+x<19>          |a_to_g<0>      |   13.654|
+x<19>          |a_to_g<1>      |   13.125|
+x<19>          |a_to_g<2>      |   13.001|
+x<19>          |a_to_g<3>      |   13.076|
+x<19>          |a_to_g<4>      |   13.289|
+x<19>          |a_to_g<5>      |   12.633|
+x<19>          |a_to_g<6>      |   13.052|
+x<20>          |a_to_g<0>      |   12.649|
+x<20>          |a_to_g<1>      |   12.442|
+x<20>          |a_to_g<2>      |   12.614|
+x<20>          |a_to_g<3>      |   12.689|
+x<20>          |a_to_g<4>      |   12.284|
+x<20>          |a_to_g<5>      |   12.355|
+x<20>          |a_to_g<6>      |   12.369|
+x<21>          |a_to_g<0>      |   13.327|
+x<21>          |a_to_g<1>      |   13.064|
+x<21>          |a_to_g<2>      |   12.874|
+x<21>          |a_to_g<3>      |   12.949|
+x<21>          |a_to_g<4>      |   12.962|
+x<21>          |a_to_g<5>      |   12.668|
+x<21>          |a_to_g<6>      |   12.991|
+x<22>          |a_to_g<0>      |   13.876|
+x<22>          |a_to_g<1>      |   13.414|
+x<22>          |a_to_g<2>      |   13.234|
+x<22>          |a_to_g<3>      |   13.309|
+x<22>          |a_to_g<4>      |   13.511|
+x<22>          |a_to_g<5>      |   13.568|
+x<22>          |a_to_g<6>      |   13.341|
+x<23>          |a_to_g<0>      |   13.809|
+x<23>          |a_to_g<1>      |   13.280|
+x<23>          |a_to_g<2>      |   13.156|
+x<23>          |a_to_g<3>      |   13.231|
+x<23>          |a_to_g<4>      |   13.444|
+x<23>          |a_to_g<5>      |   12.788|
+x<23>          |a_to_g<6>      |   13.207|
+x<24>          |a_to_g<0>      |   12.863|
+x<24>          |a_to_g<1>      |   12.656|
+x<24>          |a_to_g<2>      |   12.828|
+x<24>          |a_to_g<3>      |   12.903|
+x<24>          |a_to_g<4>      |   12.498|
+x<24>          |a_to_g<5>      |   12.569|
+x<24>          |a_to_g<6>      |   12.583|
+x<25>          |a_to_g<0>      |   13.403|
+x<25>          |a_to_g<1>      |   13.140|
+x<25>          |a_to_g<2>      |   12.950|
+x<25>          |a_to_g<3>      |   13.025|
+x<25>          |a_to_g<4>      |   13.038|
+x<25>          |a_to_g<5>      |   12.744|
+x<25>          |a_to_g<6>      |   13.067|
+x<26>          |a_to_g<0>      |   14.076|
+x<26>          |a_to_g<1>      |   13.614|
+x<26>          |a_to_g<2>      |   13.434|
+x<26>          |a_to_g<3>      |   13.509|
+x<26>          |a_to_g<4>      |   13.711|
+x<26>          |a_to_g<5>      |   13.768|
+x<26>          |a_to_g<6>      |   13.541|
+x<27>          |a_to_g<0>      |   13.761|
+x<27>          |a_to_g<1>      |   13.232|
+x<27>          |a_to_g<2>      |   13.108|
+x<27>          |a_to_g<3>      |   13.183|
+x<27>          |a_to_g<4>      |   13.396|
+x<27>          |a_to_g<5>      |   12.740|
+x<27>          |a_to_g<6>      |   13.159|
+x<28>          |a_to_g<0>      |   13.194|
+x<28>          |a_to_g<1>      |   12.987|
+x<28>          |a_to_g<2>      |   13.159|
+x<28>          |a_to_g<3>      |   13.234|
+x<28>          |a_to_g<4>      |   12.829|
+x<28>          |a_to_g<5>      |   12.900|
+x<28>          |a_to_g<6>      |   12.914|
+x<29>          |a_to_g<0>      |   13.110|
+x<29>          |a_to_g<1>      |   12.847|
+x<29>          |a_to_g<2>      |   12.657|
+x<29>          |a_to_g<3>      |   12.732|
+x<29>          |a_to_g<4>      |   12.745|
+x<29>          |a_to_g<5>      |   12.451|
+x<29>          |a_to_g<6>      |   12.774|
+x<30>          |a_to_g<0>      |   13.170|
+x<30>          |a_to_g<1>      |   12.708|
+x<30>          |a_to_g<2>      |   12.528|
+x<30>          |a_to_g<3>      |   12.603|
+x<30>          |a_to_g<4>      |   12.805|
+x<30>          |a_to_g<5>      |   12.862|
+x<30>          |a_to_g<6>      |   12.635|
+x<31>          |a_to_g<0>      |   13.146|
+x<31>          |a_to_g<1>      |   12.617|
+x<31>          |a_to_g<2>      |   12.493|
+x<31>          |a_to_g<3>      |   12.568|
+x<31>          |a_to_g<4>      |   12.781|
+x<31>          |a_to_g<5>      |   12.125|
+x<31>          |a_to_g<6>      |   12.544|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Dec 29 07:32:34 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 147 MB
+
+
+

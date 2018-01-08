@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/nVHDL/SAP1-7sa/x7seg.xst" -ofn "D:/nVHDL/SAP1-7sa/x7seg.syr" 
+xst -intstyle ise -ifn "D:/nVHDL/SAP1-7sa/x7seg.xst" -ofn "D:/nVHDL/SAP1-7sa/x7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 x7seg.ngc x7seg.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o x7seg_map.ncd x7seg.ngd x7seg.pcf 
+par -w -intstyle ise -ol high -mt off x7seg_map.ncd x7seg.ncd x7seg.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml x7seg.twx x7seg.ncd -o x7seg.twr x7seg.pcf 

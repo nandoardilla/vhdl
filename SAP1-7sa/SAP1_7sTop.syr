@@ -1,0 +1,683 @@
+Release 14.5 - xst P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: SAP1_7sTop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SAP1_7sTop.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SAP1_7sTop"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : SAP1_7sTop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\regB.vhd" into library work
+Parsing entity <regB>.
+Parsing architecture <Behavioral> of entity <regb>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\regA.vhd" into library work
+Parsing entity <regA>.
+Parsing architecture <Behavioral> of entity <rega>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\RAM.vhd" into library work
+Parsing entity <RAM>.
+Parsing architecture <Behavioral> of entity <ram>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\PC.vhd" into library work
+Parsing entity <PC>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\outReg.vhd" into library work
+Parsing entity <outReg>.
+Parsing architecture <Behavioral> of entity <outreg>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\MAR.vhd" into library work
+Parsing entity <MAR>.
+Parsing architecture <Behavioral> of entity <mar>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\IR.vhd" into library work
+Parsing entity <IR>.
+Parsing architecture <Behavioral> of entity <ir>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\CU.vhd" into library work
+Parsing entity <CU>.
+Parsing architecture <Behavioral> of entity <cu>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\x7seg.vhd" into library work
+Parsing entity <x7seg>.
+Parsing architecture <Behavioral> of entity <x7seg>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\SAP1.vhd" into library work
+Parsing entity <SAP1>.
+Parsing architecture <Behavioral> of entity <sap1>.
+Parsing VHDL file "D:\nVHDL\SAP1-7sa\SAP1_7sTop.vhd" into library work
+Parsing entity <SAP1_7sTop>.
+Parsing architecture <Behavioral> of entity <sap1_7stop>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <SAP1_7sTop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <SAP1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PC> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MAR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\nVHDL\SAP1-7sa\RAM.vhd" Line 32. Case statement is complete. others clause is never selected
+
+Elaborating entity <IR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <regA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <regB> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <outReg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <CU> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <x7seg> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SAP1_7sTop>.
+    Related source file is "D:\nVHDL\SAP1-7sa\SAP1_7sTop.vhd".
+    Summary:
+	no macro.
+Unit <SAP1_7sTop> synthesized.
+
+Synthesizing Unit <SAP1>.
+    Related source file is "D:\nVHDL\SAP1-7sa\SAP1.vhd".
+    Summary:
+	no macro.
+Unit <SAP1> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "D:\nVHDL\SAP1-7sa\PC.vhd".
+    Found 3-bit register for signal <sig_T>.
+    Found 4-bit register for signal <q>.
+    Found 4-bit adder for signal <q[3]_GND_7_o_add_0_OUT> created at line 21.
+    Found 3-bit adder for signal <sig_T[2]_GND_7_o_add_3_OUT> created at line 23.
+    Found 1-bit tristate buffer for signal <BUS_Low<3>> created at line 28
+    Found 1-bit tristate buffer for signal <BUS_Low<2>> created at line 28
+    Found 1-bit tristate buffer for signal <BUS_Low<1>> created at line 28
+    Found 1-bit tristate buffer for signal <BUS_Low<0>> created at line 28
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   4 Tristate(s).
+Unit <PC> synthesized.
+
+Synthesizing Unit <MAR>.
+    Related source file is "D:\nVHDL\SAP1-7sa\MAR.vhd".
+    Found 4-bit register for signal <outMAR>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <MAR> synthesized.
+
+Synthesizing Unit <RAM>.
+    Related source file is "D:\nVHDL\SAP1-7sa\RAM.vhd".
+    Found 1-bit tristate buffer for signal <outRAM<7>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<6>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<5>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<4>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<3>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<2>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<1>> created at line 35
+    Found 1-bit tristate buffer for signal <outRAM<0>> created at line 35
+    Summary:
+	inferred   8 Tristate(s).
+Unit <RAM> synthesized.
+
+Synthesizing Unit <IR>.
+    Related source file is "D:\nVHDL\SAP1-7sa\IR.vhd".
+    Found 4-bit register for signal <outIRlow[3]_dff_5_OUT>.
+    Found 1-bit register for signal <CLR_CLK_DFF_16>.
+    Found 1-bit register for signal <CLR_CLK_DFF_17>.
+    Found 1-bit register for signal <CLR_CLK_DFF_18>.
+    Found 1-bit register for signal <CLR_CLK_DFF_19>.
+    Found 8-bit register for signal <regBuff>.
+    Found 1-bit tristate buffer for signal <outIRlow<3>> created at line 17
+    Found 1-bit tristate buffer for signal <outIRlow<2>> created at line 17
+    Found 1-bit tristate buffer for signal <outIRlow<1>> created at line 17
+    Found 1-bit tristate buffer for signal <outIRlow<0>> created at line 17
+    Found 1-bit tristate buffer for signal <outIRlow<3>> created at line 29
+    Found 1-bit tristate buffer for signal <outIRlow<2>> created at line 29
+    Found 1-bit tristate buffer for signal <outIRlow<1>> created at line 29
+    Found 1-bit tristate buffer for signal <outIRlow<0>> created at line 29
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <IR> synthesized.
+
+Synthesizing Unit <regA>.
+    Related source file is "D:\nVHDL\SAP1-7sa\regA.vhd".
+    Found 8-bit register for signal <sigA>.
+    Found 1-bit tristate buffer for signal <outA<7>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<6>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<5>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<4>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<3>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<2>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<1>> created at line 24
+    Found 1-bit tristate buffer for signal <outA<0>> created at line 24
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <regA> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\nVHDL\SAP1-7sa\ALU.vhd".
+    Found 8-bit adder for signal <inA[7]_inB[7]_add_1_OUT> created at line 17.
+    Found 8-bit subtractor for signal <GND_44_o_GND_44_o_sub_1_OUT<7:0>> created at line 17.
+    Found 1-bit tristate buffer for signal <result<7>> created at line 18
+    Found 1-bit tristate buffer for signal <result<6>> created at line 18
+    Found 1-bit tristate buffer for signal <result<5>> created at line 18
+    Found 1-bit tristate buffer for signal <result<4>> created at line 18
+    Found 1-bit tristate buffer for signal <result<3>> created at line 18
+    Found 1-bit tristate buffer for signal <result<2>> created at line 18
+    Found 1-bit tristate buffer for signal <result<1>> created at line 18
+    Found 1-bit tristate buffer for signal <result<0>> created at line 18
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 Tristate(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <regB>.
+    Related source file is "D:\nVHDL\SAP1-7sa\regB.vhd".
+    Found 8-bit register for signal <outB>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <regB> synthesized.
+
+Synthesizing Unit <outReg>.
+    Related source file is "D:\nVHDL\SAP1-7sa\outReg.vhd".
+    Found 8-bit register for signal <LED>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <outReg> synthesized.
+
+Synthesizing Unit <CU>.
+    Related source file is "D:\nVHDL\SAP1-7sa\CU.vhd".
+    Found 3-bit register for signal <t_state>.
+    Found 12-bit register for signal <ctrl_bus>.
+    Found finite state machine <FSM_0> for signal <t_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 49                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | CLR (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | t1                                             |
+    | Power Up State     | t1                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  12 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <CU> synthesized.
+
+Synthesizing Unit <x7seg>.
+    Related source file is "D:\nVHDL\SAP1-7sa\x7seg.vhd".
+    Found 19-bit register for signal <clkdiv>.
+    Found 19-bit adder for signal <clkdiv[18]_GND_56_o_add_4_OUT> created at line 68.
+    Found 16x7-bit Read Only RAM for signal <a_to_g>
+    Found 1-bit 8-to-1 multiplexer for signal <digit<3>> created at line 43.
+    Found 1-bit 8-to-1 multiplexer for signal <digit<2>> created at line 43.
+    Found 1-bit 8-to-1 multiplexer for signal <digit<1>> created at line 43.
+    Found 1-bit 8-to-1 multiplexer for signal <digit<0>> created at line 43.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <x7seg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 19-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 8-bit addsub                                          : 1
+# Registers                                            : 14
+ 1-bit register                                        : 4
+ 12-bit register                                       : 1
+ 19-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+ 8-bit register                                        : 4
+# Multiplexers                                         : 12
+ 1-bit 8-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 8
+# Tristates                                            : 36
+ 1-bit tristate buffer                                 : 36
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <CLR_CLK_DFF_16> (without init value) has a constant value of 0 in block <u4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CLR_CLK_DFF_17> (without init value) has a constant value of 0 in block <u4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CLR_CLK_DFF_18> (without init value) has a constant value of 0 in block <u4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CLR_CLK_DFF_19> (without init value) has a constant value of 0 in block <u4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <outIRlow_0> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <outIRlow_1> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <outIRlow_2> of sequential type is unconnected in block <u4>.
+WARNING:Xst:2677 - Node <outIRlow_3> of sequential type is unconnected in block <u4>.
+
+Synthesizing (advanced) Unit <PC>.
+The following registers are absorbed into counter <sig_T>: 1 register on signal <sig_T>.
+The following registers are absorbed into counter <q>: 1 register on signal <q>.
+Unit <PC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <x7seg>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_a_to_g> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digit>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <a_to_g>        |          |
+    -----------------------------------------------------------------------
+Unit <x7seg> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 8-bit addsub                                          : 1
+# Counters                                             : 3
+ 19-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 56
+ Flip-Flops                                            : 56
+# Multiplexers                                         : 12
+ 1-bit 8-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 8
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <CLR_CLK_DFF_16> (without init value) has a constant value of 0 in block <IR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CLR_CLK_DFF_17> (without init value) has a constant value of 0 in block <IR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CLR_CLK_DFF_18> (without init value) has a constant value of 0 in block <IR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CLR_CLK_DFF_19> (without init value) has a constant value of 0 in block <IR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <outIRlow_0> of sequential type is unconnected in block <IR>.
+WARNING:Xst:2677 - Node <outIRlow_1> of sequential type is unconnected in block <IR>.
+WARNING:Xst:2677 - Node <outIRlow_2> of sequential type is unconnected in block <IR>.
+WARNING:Xst:2677 - Node <outIRlow_3> of sequential type is unconnected in block <IR>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <u1/u5/FSM_0> on signal <t_state[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ t1    | 000001
+ t2    | 000010
+ t3    | 000100
+ t4    | 001000
+ t5    | 010000
+ t6    | 100000
+-------------------
+WARNING:Xst:2042 - Unit ALU: 8 internal tristates are replaced by logic (pull-up yes): result<0>, result<1>, result<2>, result<3>, result<4>, result<5>, result<6>, result<7>.
+WARNING:Xst:2042 - Unit RAM: 8 internal tristates are replaced by logic (pull-up yes): outRAM<0>, outRAM<1>, outRAM<2>, outRAM<3>, outRAM<4>, outRAM<5>, outRAM<6>, outRAM<7>.
+WARNING:Xst:2042 - Unit regA: 8 internal tristates are replaced by logic (pull-up yes): outA<0>, outA<1>, outA<2>, outA<3>, outA<4>, outA<5>, outA<6>, outA<7>.
+WARNING:Xst:2042 - Unit IR: 4 internal tristates are replaced by logic (pull-up yes): outIRlow<0>, outIRlow<1>, outIRlow<2>, outIRlow<3>.
+WARNING:Xst:2042 - Unit PC: 4 internal tristates are replaced by logic (pull-up yes): BUS_Low<0>, BUS_Low<1>, BUS_Low<2>, BUS_Low<3>.
+
+Optimizing unit <SAP1_7sTop> ...
+
+Optimizing unit <SAP1> ...
+
+Optimizing unit <regB> ...
+
+Optimizing unit <outReg> ...
+
+Optimizing unit <CU> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SAP1_7sTop, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : SAP1_7sTop.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 152
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 18
+#      LUT2                        : 3
+#      LUT3                        : 12
+#      LUT4                        : 18
+#      LUT5                        : 17
+#      LUT6                        : 16
+#      MUXCY                       : 25
+#      MUXF7                       : 4
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 80
+#      FD_1                        : 12
+#      FDC                         : 24
+#      FDE                         : 28
+#      FDP                         : 1
+#      FDR                         : 3
+#      FDRE                        : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              80  out of  11440     0%  
+ Number of Slice LUTs:                   94  out of   5720     1%  
+    Number used as Logic:                94  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    119
+   Number with an unused Flip Flop:      39  out of    119    32%  
+   Number with an unused LUT:            25  out of    119    21%  
+   Number of fully used LUT-FF pairs:    55  out of    119    46%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    102    12%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+mclk                               | BUFGP                  | 80    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 6.715ns (Maximum Frequency: 148.920MHz)
+   Minimum input arrival time before clock: 4.562ns
+   Maximum output required time after clock: 10.958ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 6.715ns (frequency: 148.920MHz)
+  Total number of paths / destination ports: 1455 / 123
+-------------------------------------------------------------------------
+Delay:               3.358ns (Levels of Logic = 10)
+  Source:            u1/u5/ctrl_bus_3 (FF)
+  Destination:       u1/u6/sigA_7 (FF)
+  Source Clock:      mclk falling
+  Destination Clock: mclk rising
+
+  Data Path: u1/u5/ctrl_bus_3 to u1/u6/sigA_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            10   0.525   1.008  u1/u5/ctrl_bus_3 (u1/u5/ctrl_bus_3)
+     LUT3:I2->O            1   0.254   0.000  u1/u7/Maddsub_hasil_lut<0> (u1/u7/Maddsub_hasil_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  u1/u7/Maddsub_hasil_cy<0> (u1/u7/Maddsub_hasil_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  u1/u7/Maddsub_hasil_cy<1> (u1/u7/Maddsub_hasil_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  u1/u7/Maddsub_hasil_cy<2> (u1/u7/Maddsub_hasil_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  u1/u7/Maddsub_hasil_cy<3> (u1/u7/Maddsub_hasil_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  u1/u7/Maddsub_hasil_cy<4> (u1/u7/Maddsub_hasil_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  u1/u7/Maddsub_hasil_cy<5> (u1/u7/Maddsub_hasil_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  u1/u7/Maddsub_hasil_cy<6> (u1/u7/Maddsub_hasil_cy<6>)
+     XORCY:CI->O           1   0.206   0.682  u1/u7/Maddsub_hasil_xor<7> (u1/u7/hasil<7>)
+     LUT6:I5->O            5   0.254   0.000  u1/n0007<7>LogicTrst1 (x<15>)
+     FDRE:D                    0.074          u1/u4/regBuff_7
+    ----------------------------------------
+    Total                      3.358ns (1.668ns logic, 1.690ns route)
+                                       (49.7% logic, 50.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              4.562ns (Levels of Logic = 2)
+  Source:            clr (PAD)
+  Destination:       u2/clkdiv_0 (FF)
+  Destination Clock: mclk rising
+
+  Data Path: clr to u2/clkdiv_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.328   1.260  clr_IBUF (clr_IBUF)
+     INV:I->O             19   0.255   1.260  clr_inv1_INV_0 (clr_inv)
+     FDC:CLR                   0.459          u2/clkdiv_0
+    ----------------------------------------
+    Total                      4.562ns (2.042ns logic, 2.520ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 2096 / 10
+-------------------------------------------------------------------------
+Offset:              10.958ns (Levels of Logic = 7)
+  Source:            u1/u2/outMAR_2 (FF)
+  Destination:       a_to_g<1> (PAD)
+  Source Clock:      mclk rising
+
+  Data Path: u1/u2/outMAR_2 to a_to_g<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.525   1.220  u1/u2/outMAR_2 (u1/u2/outMAR_2)
+     LUT4:I0->O            1   0.254   0.910  u1/sig_bus<0>LogicTrst2 (u1/sig_bus<0>LogicTrst1)
+     LUT4:I1->O            1   0.235   0.958  u1/sig_bus<0>LogicTrst3 (u1/sig_bus<0>LogicTrst3)
+     LUT5:I1->O            6   0.254   1.152  u1/sig_bus<0>LogicTrst4 (x<8>)
+     LUT6:I2->O            1   0.254   0.000  u2/Mmux_digit<0>_4 (u2/Mmux_digit<0>_4)
+     MUXF7:I0->O           7   0.163   1.186  u2/Mmux_digit<0>_2_f7 (u2/digit<0>)
+     LUT4:I0->O            1   0.254   0.681  u2/Mram_a_to_g111 (a_to_g_1_OBUF)
+     OBUF:I->O                 2.912          a_to_g_1_OBUF (a_to_g<1>)
+    ----------------------------------------
+    Total                     10.958ns (4.851ns logic, 6.107ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |    4.430|    3.358|    2.978|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.91 secs
+ 
+--> 
+
+Total memory usage is 197420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   21 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/nVHDL/SAP1-7sa/SAP1_7sTop.xst" -ofn "D:/nVHDL/SAP1-7sa/SAP1_7sTop.syr" 
+xst -intstyle ise -ifn "D:/nVHDL/SAP1-7sa/SAP1_7sTop.xst" -ofn "D:/nVHDL/SAP1-7sa/SAP1_7sTop.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 SAP1_7sTop.ngc SAP1_7sTop.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SAP1_7sTop_map.ncd SAP1_7sTop.ngd SAP1_7sTop.pcf 
+par -w -intstyle ise -ol high -mt off SAP1_7sTop_map.ncd SAP1_7sTop.ncd SAP1_7sTop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SAP1_7sTop.twx SAP1_7sTop.ncd -o SAP1_7sTop.twr SAP1_7sTop.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 SAP1_7sTop.ngc SAP1_7sTop.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SAP1_7sTop_map.ncd SAP1_7sTop.ngd SAP1_7sTop.pcf 
+par -w -intstyle ise -ol high -mt off SAP1_7sTop_map.ncd SAP1_7sTop.ncd SAP1_7sTop.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SAP1_7sTop.twx SAP1_7sTop.ncd -o SAP1_7sTop.twr SAP1_7sTop.pcf 
+bitgen -intstyle ise -f SAP1_7sTop.ut SAP1_7sTop.ncd 

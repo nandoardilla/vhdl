@@ -1,0 +1,16 @@
+NET "mclk" LOC = P55;
+NET "clr" LOC = P5;
+
+NET "a_to_g[6]" LOC = P44;
+NET "a_to_g[5]" LOC = P45;
+NET "a_to_g[4]" LOC = P46;
+NET "a_to_g[3]" LOC = P47;
+NET "a_to_g[2]" LOC = P48;
+NET "a_to_g[1]" LOC = P50;
+NET "a_to_g[0]" LOC = P51;
+
+NET "dp" LOC = P26;
+
+NET "an[0]" LOC = P41;
+NET "an[1]" LOC = P43;
+NET "an[2]" LOC = P24;

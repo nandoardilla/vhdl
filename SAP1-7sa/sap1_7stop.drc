@@ -1,0 +1,8 @@
+Release 14.5 Drc P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Fri Dec 29 07:40:29 2017
+
+drc -z SAP1_7sTop.ncd SAP1_7sTop.pcf
+
+DRC detected 0 errors and 0 warnings.
